@@ -29,7 +29,7 @@ async def on_message(message):
         return
 
     # !nike -> Give first five sneakers from Nike Launch Calendar
-    if message.content.startswith('!nike'): 
+    if message.content.startswith('!endo'): 
         # Check if the site is up
         if r.ok:
             shoes = get_nike_shoes()  # List of shoes and releases
