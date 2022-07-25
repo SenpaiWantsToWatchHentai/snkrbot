@@ -12,7 +12,7 @@ html_of_site = r.html
 # Functions 
 def get_nike_shoes(html_of_site=html_of_site): 
     '''Return the first ten shoes in the launch calendar.''' 
-    select = "div[class='mb-8']"  # Selector to scrape
+    select = "div[class='mb-5 sm:mb-2']"  # Selector to scrape
     shoes_and_releases = html_of_site.find(select)  # Gets the css elements
     list_of_shoes = []  # Contains the shoes and its release
 
@@ -23,7 +23,7 @@ def get_nike_shoes(html_of_site=html_of_site):
 
 def get_links(html_of_site=html_of_site): 
     '''Return the first ten links for the shoes in the launch calendar.'''
-    select = "a[class^='mb-8']"  # Selector to scrape
+    select = "a[class^='mb sm mb']"  # Selector to scrape
     links_for_shoes = html_of_site.find(select)  # Gets the css elements
     list_of_links = []  # Contains the links for the shoes
 
