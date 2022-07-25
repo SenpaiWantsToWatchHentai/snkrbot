@@ -7,7 +7,7 @@ from nike_module import get_nike_shoes, get_links
 # An object that represents a connection to Discord  (i.e. session)
 client = discord.Client()  
 # Nike SNKRS Lauch Calendar
-NIKE_SNKRS_URL = 'https://www.nike.com/launch/?s=upcoming' 
+NIKE_SNKRS_URL = 'https://heat-mvmnt.de/releases' 
 # Create a Session
 s = requests.Session() 
 # Create a Response
